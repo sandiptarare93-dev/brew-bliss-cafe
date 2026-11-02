@@ -1,0 +1,60 @@
+export const SPECIAL_OFFERS = [
+  {
+    id: 'offer-bogo',
+    title: 'Buy 1 Get 1 Free Coffee',
+    badge: 'Limited Hours',
+    badgeColor: 'bg-amber-600',
+    subtitle: 'Afternoon Happy Hours (4 PM - 7 PM)',
+    description: 'Order any regular or large hot coffee and receive a second cup of equal or lesser value completely on the house.',
+    promoCode: 'BOGOBLISS',
+    discountAmount: 180,
+    validUntil: 'Demo Offer — Ongoing Promotion',
+    terms: 'Valid on hot coffees only. Maximum 1 free beverage per demo order.',
+    image: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=700&q=80',
+    category: 'Coffee'
+  },
+  {
+    id: 'offer-student',
+    title: 'Student Special Discount',
+    badge: '20% Off',
+    badgeColor: 'bg-emerald-600',
+    subtitle: 'Flash Your Student ID or use Code',
+    description: 'Fuel your study sessions and group projects! Get a flat 20% discount on entire food & beverage orders above ₹250.',
+    promoCode: 'STUDENT20',
+    discountPercent: 20,
+    validUntil: 'Valid Monday to Friday',
+    terms: 'Valid with student verification or code application. Cannot be combined with BOGO.',
+    image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=700&q=80',
+    category: 'Student'
+  },
+  {
+    id: 'offer-weekend',
+    title: 'Weekend Coffee Combos',
+    badge: 'Save ₹70',
+    badgeColor: 'bg-blue-600',
+    subtitle: 'Artisan Espresso + Butter Croissant',
+    description: 'Kickstart your weekend leisure with our signature Cappuccino paired with a golden Parisian Butter Croissant for just ₹249.',
+    promoCode: 'WEEKENDCOMBO',
+    comboPrice: 249,
+    regularPrice: 320,
+    validUntil: 'Every Saturday & Sunday',
+    terms: 'Available for dine-in & takeaway during weekend demo hours.',
+    image: 'https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=700&q=80',
+    category: 'Combo'
+  },
+  {
+    id: 'offer-dessert',
+    title: 'Dessert & Coffee Duo',
+    badge: 'Sweet Pairing',
+    badgeColor: 'bg-rose-600',
+    subtitle: 'Belgian Truffle Brownie + Spanish Latte',
+    description: 'Experience pure indulgence! Pair our warm Belgian chocolate brownie and vanilla gelato with an Iced Spanish Latte for ₹299.',
+    promoCode: 'SWEETDUO',
+    comboPrice: 299,
+    regularPrice: 405,
+    validUntil: 'All Days After 6:00 PM',
+    terms: 'Applicable to brownie + beverage pairings. Subject to dessert availability.',
+    image: 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=700&q=80',
+    category: 'Combo'
+  }
+];

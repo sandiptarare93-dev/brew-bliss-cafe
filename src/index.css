@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#FDFBF7] text-[#2C170A] antialiased selection:bg-[#D4A373]/30 selection:text-[#2C170A];
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F5EBE1;
+}
+::-webkit-scrollbar-thumb {
+  background: #D7BEA8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94582E;
+}
+
+/* Subtle steam animation for coffee cup icon */
+@keyframes steam {
+  0% { transform: translateY(0) scaleX(1); opacity: 0.8; }
+  50% { transform: translateY(-4px) scaleX(1.1); opacity: 0.4; }
+  100% { transform: translateY(-8px) scaleX(1.2); opacity: 0; }
+}
+
+.animate-steam {
+  animation: steam 2.5s infinite ease-out;
+}
