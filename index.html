@@ -52,6 +52,18 @@
         "openingHours": "Mo-Su 08:00-23:00"
       }
     </script>
+    <!-- Automatic GitHub Pages Redirect to Compiled App -->
+    <script>
+      (function() {
+        if (window.location.hostname.includes('github.io')) {
+          var path = window.location.pathname;
+          if (!path.includes('/dist/') && !path.includes('/docs/')) {
+            var target = path.replace(/\/?$/, '/dist/');
+            window.location.replace(target + window.location.search + window.location.hash);
+          }
+        }
+      })();
+    </script>
   </head>
   <body class="bg-coffee-50 text-coffee-950 font-sans antialiased selection:bg-gold-500/20 selection:text-coffee-900">
     <div id="root"></div>
